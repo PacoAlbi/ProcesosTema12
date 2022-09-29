@@ -1,5 +1,6 @@
 package lanzaproceso;
 
+import java.io.File;
 import java.util.Arrays;
 import java.io.IOException;
 
@@ -16,6 +17,8 @@ public class LanzaProceso {
 
     // Le pasamos los argumentos al ProcessBuilder
     ProcessBuilder pb = new ProcessBuilder(args);
+    File directorio = new File("C:\\Users\\falbinana\\IdeaProjects\\ProcesosTema1\\src\\lanzaproceso");
+    pb.directory(directorio);
     
     /* Con esta llamada hacemos que el proceso herede la entrada 
     y salida estándares del proceso padre */

@@ -12,9 +12,9 @@ public class Main3 {
 
         String [] comandos;
 
-        String comando = sc.nextLine();
+        //String comando = sc.nextLine();
 
-        //String comando = JOptionPane.showInputDialog(System.in);
+        String comando = JOptionPane.showInputDialog(System.in);
 
         comandos = comando.split(" ");
 
